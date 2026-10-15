@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uma experiência gamificada para engajar pessoas com limite baixo no cartão de crédito Mercado Pago. Um projeto de Rafael Fortes.">
+    <meta name="theme-color" content="#101c30">
+    <title>Gamification — Rafael Fortes</title>
+    <script>
+      try { sessionStorage.setItem('rf-menu-intro-seen', '1'); } catch {}
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('intro-pending');
+        setTimeout(() => document.documentElement.classList.remove('intro-pending'), 2500);
+      }
+    </script>
+    <link rel="preload" href="./assets/google-sans-flex-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./sobre-mim.css">
+    <link rel="stylesheet" href="./trabalhos.css">
+    <link rel="stylesheet" href="./trabalho-01.css">
+    <script src="./intro.js" defer></script>
+    <script src="./pages.js" defer></script>
+    <script src="./case-gallery.js" defer></script>
+    <script src="./case-reveal.js" defer></script>
+    <script src="./navigation.js" defer></script>
+  </head>
+  <body>
+    <div class="case-page" id="app" data-page="trabalho-01" data-node-id="435:13">
+      <header class="header">
+        <nav class="navigation" aria-label="Navegação principal">
+          <a class="navigation-item" href="./index.html">home</a>
+          <a class="navigation-item" href="./sobre-mim.html">sobre mim</a>
+          <a class="navigation-item current" href="./trabalhos.html" aria-current="page">
+            trabalhos
+            <img class="active-underline" src="./assets/work-underline.svg" width="68" height="2" alt="">
+          </a>
+        </nav>
+        <time class="date" datetime="2026-10">out. 2026</time>
+      </header>
+
+      <main class="case-content" id="page-content">
+        <section class="case-hero" aria-labelledby="case-title">
+          <img class="case-hero-image" src="./assets/trabalho-gamification.png" width="1920" height="1080" alt="" data-node-id="497:12924" fetchpriority="high">
+          <div class="case-hero-copy">
+            <p class="case-number" data-node-id="435:20" data-intro-reveal="40">01.</p>
+            <h1 id="case-title" data-intro="cards" data-intro-reveal="130" data-node-id="435:41">Uma experiência gamificada para engajar pessoas com limite baixo no cartão de crédito Mercado Pago</h1>
+            <p class="case-meta" data-intro-reveal="240" data-node-id="435:1300">engagement / mercado pago&nbsp; /&nbsp; set. 2026</p>
+          </div>
+        </section>
+
+        <section class="case-challenge" aria-labelledby="challenge-title">
+          <div class="case-aside">
+            <h2 id="challenge-title" data-node-id="444:1303">O desafio</h2>
+            <p data-node-id="435:1040">Como aumentar o engajamento de usuários com limite baixo?</p>
+          </div>
+          <p class="case-large-copy" data-node-id="443:1302">No time de Engagement do Mercado Pago, o desafio era estimular o uso do cartão de crédito, transformando uma condição inicialmente restritiva em uma oportunidade de engajamento e evolução.</p>
+        </section>
+
+        <section class="case-experience" aria-labelledby="experience-title">
+          <img class="case-experience-image" src="./assets/trabalho-01/capa.png" width="1576" height="1308" alt="Celular com a experiência de missões do Mercado Pago sobre uma superfície azul" data-node-id="446:10744">
+          <div class="case-experience-copy">
+            <div class="case-aside">
+              <h2 id="experience-title" data-node-id="446:10747">A experiência</h2>
+              <p data-node-id="446:15028">Tornando o progresso visível e cada conquista mais significativa.</p>
+            </div>
+            <p class="case-experience-description" data-node-id="445:92">A proposta foi transformar a evolução do limite em uma jornada gamificada, na qual níveis e insígnias ajudam o usuário a visualizar seu progresso e reconhecer suas conquistas.</p>
+          </div>
+        </section>
+
+        <section class="case-mechanics" aria-labelledby="mechanics-title">
+          <div class="case-aside">
+            <h2 id="mechanics-title" data-node-id="462:15032">A mecânica</h2>
+            <p data-node-id="462:15031">Uma dinâmica simples para incentivar novos hábitos.</p>
+          </div>
+          <div class="case-mechanics-content">
+            <div class="case-large-copy" data-node-id="443:1301">
+              <p>A cada ciclo, o usuário recebe 2 missões sequenciais: atingir uma meta de consumo no cartão e pagar a fatura dentro do prazo.</p>
+              <p>Essas ações compõem uma jornada de progressão estruturada em quatro níveis.</p>
+            </div>
+            <dl class="case-stats">
+              <div><dt>níveis de<br>evolução</dt><dd data-node-id="435:1296">04</dd></div>
+              <div><dt>missões<br>por ciclo</dt><dd data-node-id="444:1305">02</dd></div>
+              <div><dt>países<br>diferentes</dt><dd data-node-id="435:1298">03</dd></div>
+            </dl>
+            <div class="case-badges" aria-label="Insígnias dos quatro níveis de evolução" data-node-id="497:12927">
+              <img class="badge-paper" src="./assets/trabalho-01/02%202.png" width="260" height="290" alt="Primeiro nível: avião de papel" data-node-id="435:1035">
+              <img class="badge-balloon" src="./assets/trabalho-01/05%202.png" width="213" height="293" alt="Segundo nível: balão" data-node-id="435:1038">
+              <img class="badge-plane" src="./assets/trabalho-01/04%202.png" width="307" height="262" alt="Terceiro nível: avião" data-node-id="435:1037">
+              <img class="badge-rocket" src="./assets/trabalho-01/03%202.png" width="296" height="347" alt="Quarto nível: foguete" data-node-id="435:1036">
+            </div>
+          </div>
+        </section>
+
+        <section class="case-gallery" aria-labelledby="screens-title" aria-roledescription="carrossel" data-case-gallery>
+          <div class="case-gallery-controls">
+            <h2 id="screens-title" data-node-id="495:3243">Screens</h2>
+            <p class="case-gallery-count" aria-live="polite" aria-atomic="true"><span data-gallery-count>1</span> de 6</p>
+            <div class="case-gallery-arrows">
+              <button type="button" data-gallery-prev aria-label="Tela anterior" aria-controls="case-screens" disabled>
+                <img class="gallery-arrow-enabled" src="./assets/trabalho-01/left-enable.svg" width="38" height="38" alt="">
+                <img class="gallery-arrow-disabled" src="./assets/trabalho-01/left-disable.svg" width="38" height="38" alt="">
+              </button>
+              <button type="button" data-gallery-next aria-label="Próxima tela" aria-controls="case-screens">
+                <img class="gallery-arrow-enabled" src="./assets/trabalho-01/right-enable.svg" width="38" height="38" alt="">
+                <img class="gallery-arrow-disabled" src="./assets/trabalho-01/right-disable.svg" width="38" height="38" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="case-screen-viewport" id="case-screens" tabindex="0" aria-label="Telas do projeto. Use as setas do teclado ou arraste para navegar.">
+            <div class="case-screen-track">
+              <figure class="case-screen is-active" role="group" aria-roledescription="slide" aria-label="1 de 6: First time use" data-node-id="497:11699">
+                <figcaption>First time use</figcaption>
+                <img src="./assets/trabalho-01/Untitled.png" width="720" height="1600" alt="Apresentação das missões e dos níveis de evolução do limite" draggable="false">
+              </figure>
+              <figure class="case-screen" role="group" aria-roledescription="slide" aria-label="2 de 6: Dashboard" data-node-id="497:11770">
+                <figcaption>Dashboard</figcaption>
+                <img src="./assets/trabalho-01/Untitled-1.png" width="720" height="1600" alt="Dashboard do cartão com o componente de missões recolhido" draggable="false">
+              </figure>
+              <figure class="case-screen" role="group" aria-roledescription="slide" aria-label="3 de 6: Componente aberto" data-node-id="497:11806">
+                <figcaption>Componente aberto</figcaption>
+                <img src="./assets/trabalho-01/Untitled-2.png" width="720" height="1600" alt="Componente expandido com as duas missões e o progresso" draggable="false">
+              </figure>
+              <figure class="case-screen" role="group" aria-roledescription="slide" aria-label="4 de 6: Aumento de limite" data-node-id="497:11864">
+                <figcaption>Aumento de limite</figcaption>
+                <img src="./assets/trabalho-01/Untitled-3.png" width="720" height="1600" alt="Estado estático do mockup de aumento de limite, com a insígnia de foguete" draggable="false">
+              </figure>
+              <figure class="case-screen" role="group" aria-roledescription="slide" aria-label="5 de 6: Aumento de limite" data-node-id="497:11898">
+                <figcaption>Aumento de limite</figcaption>
+                <img src="./assets/trabalho-01/Untitled-4.png" width="720" height="1600" alt="Confirmação do aumento de limite para 200 pesos" draggable="false">
+              </figure>
+              <figure class="case-screen" role="group" aria-roledescription="slide" aria-label="6 de 6: Usuário com dívida" data-node-id="497:11933">
+                <figcaption>Usuário com dívida</figcaption>
+                <img src="./assets/trabalho-01/Untitled-5.png" width="720" height="1600" alt="Estado com missões pausadas para um usuário com dívida" draggable="false">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <footer class="case-footer" aria-labelledby="case-contact-title">
+          <p class="case-footer-edition">portfolio 2026</p>
+          <h2 id="case-contact-title">Bora criar <br>algo juntos?</h2>
+          <div class="case-footer-bottom">
+            <div class="case-footer-signature">
+              <p>rafa fortes</p>
+              <p>senior product designer</p>
+            </div>
+            <address class="case-footer-contact" aria-label="Contato de Rafael Fortes">
+              <a href="tel:+5511972305785">11 9 7230-5785</a>
+              <a href="mailto:rfdsgn@gmail.com">rfdsgn@gmail.com</a>
+              <a href="https://www.linkedin.com/in/fortesrafa" target="_blank" rel="noopener noreferrer">linkedin.com/in/fortesrafa</a>
+            </address>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* Desktop values follow the original 1440 × 1024 Figma frame. */
+.about-page {
+  min-height: max(100svh, calc(71.1111111111vw - 1px));
+  padding-bottom: calc(8.75vw - 1px);
+}
+
+.about-page .header { min-height: 7.5vw; }
+.about-page .navigation-item { color: var(--ink); }
+.about-page .active-underline { width: 4.7222222222vw; }
+
+.about-content {
+  display: grid;
+  grid-template-columns: 48.6111111111vw 28.2638888889vw;
+  column-gap: 14.2361111111vw;
+  margin: 10.1388888889vw 3.75vw 0 var(--gutter);
+}
+
+.profile {
+  display: grid;
+  grid-template-rows: 26.8055555556vw auto;
+  align-content: start;
+  min-width: 0;
+}
+
+.about-statement {
+  position: relative;
+  align-self: start;
+  width: 40.9027777778vw;
+  color: #161616;
+  font-size: 2.4875vw;
+  font-weight: 700;
+  line-height: 3.0208333333vw;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 14.5270138889vw 29.5833333333vw;
+  column-gap: 4.5007638889vw;
+  align-items: start;
+}
+
+.portrait {
+  position: relative;
+  width: 14.5270138889vw;
+  height: 17.9166666667vw;
+  overflow: hidden;
+  border-radius: 1.2105555556vw;
+}
+
+.portrait img {
+  position: absolute;
+  top: -7.43%;
+  left: -53.33%;
+  width: 153.36%;
+  height: 107.27%;
+  max-width: none;
+}
+
+.section-label {
+  margin: 0;
+  color: #a8a8a8;
+  font-size: 0.6671527778vw;
+  font-weight: 700;
+  line-height: 0.8333333333vw;
+  letter-spacing: 0.0833888889vw;
+  text-transform: uppercase;
+}
+
+.latest-experience .section-label { margin-left: 0.0694444444vw; }
+
+.latest-experience h2 {
+  width: 23.359375vw;
+  margin: 1.5534722222vw 0 0;
+  color: #000;
+  font-size: 1.5348611111vw;
+  font-weight: 600;
+  line-height: 1.9184027778vw;
+}
+
+.experience-period {
+  color: #7e7e7e;
+  font-size: 0.6671527778vw;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 0.8895138889vw;
+  white-space: nowrap;
+}
+
+.latest-period {
+  margin-top: 1.5840277778vw;
+  line-height: 0.8485416667vw;
+}
+
+.latest-description {
+  margin-top: 3.7736111111vw;
+  color: #000;
+  font-size: 1.0159027778vw;
+  line-height: 1.3707638889vw;
+  letter-spacing: 0.0248333333vw;
+}
+
+.career-history { padding-top: 1.4583333333vw; }
+.career-history > .section-label { margin-left: 8.4722222222vw; }
+
+.career-list {
+  margin: 1.3902777778vw 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.career-item {
+  display: grid;
+  grid-template-columns: 8.4722222222vw 19.7916666667vw;
+  align-items: start;
+  min-height: 11.11875vw;
+}
+
+.career-item:nth-child(2) { min-height: 12.5645833333vw; }
+.career-item:nth-child(3) { min-height: 11.4527777778vw; }
+.career-item:last-child { min-height: 0; }
+.career-item > .experience-period { padding-top: 0.484375vw; }
+
+.career-details h3 {
+  display: flex;
+  align-items: center;
+  min-height: 1.7790277778vw;
+  margin: 0;
+  color: #000;
+  font-size: 0.9117361111vw;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.career-details > p {
+  margin-top: 0.4445138889vw;
+  color: #7e7e7e;
+  font-size: 10px;
+  line-height: 1.2230555556vw;
+  letter-spacing: 0.0203819444vw;
+}
+
+.career-details strong { color: #000; font-weight: 600; }
+.career-item:last-child .career-details > p { max-width: 18.235vw; }
+
+@media (max-width: 1050px) {
+  .about-page { padding-bottom: 64px; }
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    margin: 100px var(--gutter) 0;
+  }
+  .profile { grid-template-rows: auto auto; row-gap: 80px; }
+  .about-statement { width: min(100%, 620px); font-size: 36px; line-height: 1.22; }
+  .profile-details { grid-template-columns: 209px minmax(0, 426px); gap: 48px; }
+  .portrait { width: 209px; height: 258px; border-radius: 17.432px; }
+  .section-label { font-size: 10px; line-height: 14px; letter-spacing: 1.2px; }
+  .latest-experience .section-label { margin-left: 0; }
+  .latest-experience h2 { width: min(100%, 336px); margin-top: 20px; font-size: 22px; line-height: 1.25; }
+  .experience-period { font-size: 12px; line-height: 18px; }
+  .latest-period { margin-top: 20px; line-height: 18px; }
+  .latest-description { margin-top: 40px; font-size: 15px; line-height: 1.5; letter-spacing: 0.25px; }
+  .career-history { padding-top: 0; }
+  .career-history > .section-label { margin-left: 0; }
+  .career-list { display: grid; gap: 36px; margin-top: 28px; }
+  .career-item { grid-template-columns: 150px minmax(0, 480px); gap: 24px; }
+  .career-item, .career-item:nth-child(2), .career-item:nth-child(3) { min-height: 0; }
+  .career-item > .experience-period { padding-top: 2px; }
+  .career-details h3 { min-height: 0; font-size: 18px; line-height: 1.35; }
+  .career-details > p { margin-top: 12px; font-size: 14px; line-height: 1.6; letter-spacing: 0.2px; }
+  .career-item:last-child .career-details > p { max-width: none; }
+}
+
+@media (max-width: 600px) {
+  .about-page .header { min-height: 72px; }
+  .about-page .active-underline { width: 48px; }
+  .about-content { margin-top: 64px; gap: 64px; }
+  .about-statement { font-size: 30px; line-height: 1.22; }
+  .profile { row-gap: 56px; }
+  .profile-details { grid-template-columns: 1fr; gap: 32px; }
+  .latest-description { margin-top: 28px; }
+  .career-item { grid-template-columns: 1fr; gap: 8px; }
+  .career-item > .experience-period { padding-top: 0; }
+}

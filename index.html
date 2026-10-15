@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Rafael Fortes — senior product designer, UI/UX design e visual design.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Rafael Fortes — Portfolio</title>
+    <script>
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('intro-pending');
+        let firstHomeVisit = false;
+        try {
+          firstHomeVisit = sessionStorage.getItem('rf-menu-intro-seen') !== '1';
+          sessionStorage.setItem('rf-menu-intro-seen', '1');
+        } catch {
+          firstHomeVisit = !document.referrer;
+        }
+        if (firstHomeVisit && !['#sobre-mim', '#trabalhos', '#trabalho-01'].includes(location.hash)) document.documentElement.classList.add('intro-menu-pending');
+        setTimeout(() => document.documentElement.classList.remove('intro-pending', 'intro-menu-pending'), 2500);
+      }
+    </script>
+    <link rel="preload" href="./assets/google-sans-flex-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./sobre-mim.css">
+    <link rel="stylesheet" href="./trabalhos.css">
+    <link rel="stylesheet" href="./trabalho-01.css">
+    <script src="./intro.js" defer></script>
+    <script src="./pages.js" defer></script>
+    <script src="./case-gallery.js" defer></script>
+    <script src="./case-reveal.js" defer></script>
+    <script src="./navigation.js" defer></script>
+  </head>
+  <body>
+    <div class="home" id="app" data-page="home" data-node-id="432:703">
+      <header class="header">
+        <nav class="navigation" aria-label="Navegação principal">
+          <a class="navigation-item current" href="./index.html" aria-current="page" data-node-id="432:715">
+            home
+            <img class="active-underline" src="./assets/home-underline.svg" width="41" height="2" alt="" data-node-id="434:8">
+          </a>
+          <a class="navigation-item" href="./sobre-mim.html" data-node-id="432:731">sobre mim</a>
+          <a class="navigation-item" href="./trabalhos.html" data-node-id="432:732">trabalhos</a>
+        </nav>
+        <time class="date" datetime="2026-10" data-node-id="432:730">out. 2026</time>
+      </header>
+
+      <main class="home-content" id="page-content">
+      <div class="hero">
+        <h1 data-node-id="432:759">Portfolio</h1>
+      </div>
+
+      <p class="expertise" data-node-id="432:719">senior product designer&nbsp; /&nbsp; ui/ux design&nbsp; /&nbsp; visual design</p>
+
+      <footer class="footer">
+        <p class="name" data-node-id="432:712">Rafael Fortes</p>
+        <address class="contact" aria-label="Contato de Rafael Fortes">
+          <a class="phone" href="tel:+5511972305785" data-node-id="432:710">11 9 7230-5785</a>
+          <a class="email" href="mailto:rfdsgn@gmail.com" data-node-id="432:708">rfdsgn@gmail.com</a>
+          <a class="linkedin" href="https://www.linkedin.com/in/fortesrafa" target="_blank" rel="noopener noreferrer" data-node-id="432:716">linkedin.com/in/fortesrafa</a>
+        </address>
+      </footer>
+      </main>
+    </div>
+  </body>
+</html>
