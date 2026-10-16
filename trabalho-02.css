@@ -1,0 +1,125 @@
+/* Case 02: original Figma frame, 1440 × 7243. */
+.case-02 { color: #000; }
+.case-02 .case-hero { background: #0d0d0d; }
+.case-02 .case-hero-image { opacity: .2; filter: none; border-radius: 1.1111111111vw; }
+.case-02 .case-number { font-size: 4.2497222222vw; line-height: 5.1608333333vw; }
+.case-02 .case-hero h1 { max-width: 82.3611111111vw; margin-top: 5.8113888889vw; }
+.case-02 .case-meta { margin-top: 5.9027777778vw; font-size: 1.2450694444vw; font-weight: 500; line-height: 1.5277777778vw; white-space: pre-wrap; }
+.case-02 .case-large-copy { color: #000; }
+.case-02 .case-challenge { grid-template-columns: 17.3940849304vw minmax(0, 1fr); gap: 9.8281372918vw; margin-inline: 11.25vw 12.7777777778vw; padding-block: 18.0555555556vw 18.0555555556vw; }
+.case-02 .case-challenge .case-aside > p { margin-top: 1.7810416667vw; }
+.case-02 .case-challenge .case-large-copy { line-height: 3.2291666667vw; }
+.case-02 .case-challenge .case-large-copy > p + p { margin-top: 3.2291666667vw; }
+.case02-rule { position: relative; height: 0; margin-inline: .1388888889vw; }
+.case02-rule::after { position: absolute; inset: 0 0 auto; height: 1px; background: url("./assets/trabalho-02/section-divider.svg") center / 100% 1px no-repeat; content: ""; }
+.case02-opportunity { display: grid; grid-template-columns: 54.7222222222vw minmax(0, 1fr); padding-bottom: 5.9722222222vw; }
+.case02-opportunity-image { display: block; width: 100%; height: 45.4166666667vw; object-fit: cover; border-radius: 1.1111111111vw; }
+.case02-opportunity-copy { display: flex; flex-direction: column; justify-content: space-between; min-width: 0; padding: 6.1111111111vw 6.3194444444vw 0 4.5138888889vw; }
+.case02-opportunity .case-aside { max-width: 20.2777777778vw; }
+.case-02 .case02-opportunity .case-aside > p,
+.case02-experience .case-aside > p,
+.case02-principles .case-aside > p { font-weight: 500; }
+.case02-opportunity-description { font-size: 1.8377083333vw; font-weight: 500; line-height: 2.36vw; }
+.case02-experience { display: grid; grid-template-columns: 18.8888888889vw minmax(0, 1fr); gap: 5.4166666667vw; margin-inline: 12.7083333333vw 7.3611111111vw; padding-block: 18.0555555556vw; }
+.case02-experience .case-aside { padding-top: .1388888889vw; }
+.case02-opportunity-reverse { grid-template-columns: minmax(0, 1fr) 54.7222222222vw; }
+.case02-opportunity-reverse .case02-opportunity-copy { padding-inline: 6.3194444444vw 4.5138888889vw; }
+.case02-principles { padding: 8.3333333333vw 0 12.5vw; margin-inline: 6.3194444444vw 13.8888888889vw; }
+.case02-principles-title,
+.case02-comparison-title { margin: 0; font-size: 3.7660416667vw; font-weight: 600; line-height: 4.4791666667vw; }
+.case02-principles-grid { display: grid; grid-template-columns: 17.5vw minmax(0, 1fr); gap: 5.5555555556vw; margin-top: 7.7083333333vw; }
+.case02-principles .case-aside h3 { margin: 0; font-size: 1.3888888889vw; font-weight: 600; line-height: 1.7361111111vw; }
+.case02-principles-lead { max-width: 55.625vw; }
+.case02-principles-detail { margin-top: 5.7986111111vw; font-size: 1.8377083333vw; font-weight: 400; line-height: 2.36vw; }
+.case02-principles-detail p + p { margin-top: 2.36vw; }
+.case02-ai-card { display: flex; align-items: center; gap: 1.7361111111vw; width: 46.8055555556vw; min-height: 16.25vw; margin-top: 5.9027777778vw; padding: 1.5277777778vw 2.9861111111vw; border: 1px solid #e4e4e4; border-radius: 0 3.75vw 3.75vw; }
+.case02-ai-card > img { flex: 0 0 13.1944444444vw; width: 13.1944444444vw; height: 13.1944444444vw; object-fit: contain; }
+.case02-ai-card > div { width: 24.4444444444vw; min-width: 0; }
+.case02-ai-card h3 { max-width: 11.5277777778vw; margin: 0; font-size: 1.3888888889vw; font-weight: 600; line-height: 1.7361111111vw; }
+.case02-ai-card p { margin-top: 1.4583333333vw; color: #686868; font-size: 1.1111111111vw; font-weight: 500; line-height: 1.3888888889vw; }
+.case02-comparison { display: grid; grid-template-columns: 20.2777777778vw minmax(0, 1fr); height: 83.3333333333vw; margin-left: 3.1944444444vw; padding: 6.5972222222vw 0 0 6.25vw; border-radius: 5vw; background: #f7f7f7; }
+.case02-comparison-title { margin-top: 2.9166666667vw; }
+.case02-comparison-screens { display: flex; align-items: flex-start; gap: 5.9027777778vw; min-width: 0; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: #d3d3d3 transparent; }
+.case02-comparison-screens:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
+.case02-comparison-screens figure { flex: 0 0 25vw; min-width: 0; margin: 0; }
+.case02-comparison-screens figcaption { margin-bottom: 2.2222222222vw; font-size: 1.3888888889vw; font-weight: 400; line-height: 1.7361111111vw; }
+.case02-comparison-screens img { display: block; width: 100%; height: auto; }
+.case-02 .case-footer { min-height: 44.5138888889vw; margin-inline: 2.8472222222vw 3.1944444444vw; padding-block: 8.3333333333vw; }
+.case-02 .case-footer-edition { font-size: 1.1205555556vw; line-height: 1.3888888889vw; }
+.case-02 .case-footer h2 { font-size: 3.7660416667vw; line-height: 3.9444444444vw; }
+.case-02 .case-footer-bottom { margin-top: 11.0416666667vw; }
+.case-02 .case-footer-signature { font-size: 2.3526388889vw; line-height: 2.9166666667vw; letter-spacing: -.1071736111vw; }
+.case-02 .case-footer-signature > p + p { color: #b4a8a8; }
+.case-02 .case-footer-contact { gap: 3.75vw; padding: 0; font-size: 1.1205555556vw; line-height: 1.3888888889vw; }
+.case-02 .case-footer-contact a:last-child { font-family: "Montserrat", sans-serif; font-size: .9930555556vw; font-weight: 600; }
+
+@media (max-width: 1050px) {
+  .case-02 .case-challenge { grid-template-columns: 28% minmax(0, 1fr); gap: 7%; margin-inline: var(--gutter); padding-block: 120px; }
+  .case-02 .case-challenge .case-large-copy { line-height: 34px; }
+  .case-02 .case-challenge .case-large-copy > p + p { margin-top: 34px; }
+  .case-02 .case-challenge .case-aside > p { margin-top: 18px; }
+  .case02-opportunity-copy { padding: 32px 24px 0; gap: 48px; }
+  .case02-opportunity .case-aside { max-width: none; }
+  .case02-opportunity-description { font-size: 19px; line-height: 25px; }
+  .case02-opportunity-image { height: auto; align-self: stretch; min-height: 410px; }
+  .case02-opportunity-reverse .case02-opportunity-copy { padding-inline: 24px; }
+  .case02-experience { grid-template-columns: 28% minmax(0, 1fr); gap: 7%; margin-inline: var(--gutter); padding-block: 120px; }
+  .case02-principles { margin-inline: var(--gutter); padding-block: 80px 120px; }
+  .case02-principles-title, .case02-comparison-title { font-size: 42px; line-height: 48px; }
+  .case02-principles-grid { grid-template-columns: 28% minmax(0, 1fr); gap: 7%; margin-top: 72px; }
+  .case02-principles .case-aside h3 { font-size: 16px; line-height: 21px; }
+  .case02-principles-lead { max-width: none; }
+  .case02-principles-detail { margin-top: 56px; font-size: 21px; line-height: 28px; }
+  .case02-principles-detail p + p { margin-top: 28px; }
+  .case02-ai-card { width: 100%; min-height: 0; gap: 16px; margin-top: 56px; padding: 20px; border-radius: 0 32px 32px; }
+  .case02-ai-card > img { flex-basis: 120px; width: 120px; height: 120px; }
+  .case02-ai-card > div { width: auto; }
+  .case02-ai-card h3 { max-width: 166px; font-size: 18px; line-height: 23px; }
+  .case02-ai-card p { margin-top: 16px; font-size: 14px; line-height: 19px; }
+  .case02-comparison { display: block; height: auto; padding: 48px 32px; }
+  .case02-comparison-title { margin: 0 0 40px; }
+  .case02-comparison-title br { display: none; }
+  .case02-comparison-screens { gap: 40px; }
+  .case02-comparison-screens figure { flex-basis: min(36vw, 360px); }
+  .case02-comparison-screens figcaption { margin-bottom: 24px; font-size: 18px; line-height: 24px; }
+  .case-02 .case-footer { min-height: 0; margin-inline: var(--gutter); padding-block: 80px; }
+  .case-02 .case-footer-edition, .case-02 .case-footer-contact { font-size: 14px; line-height: 20px; }
+  .case-02 .case-footer h2 { font-size: 42px; line-height: 46px; }
+  .case-02 .case-footer-bottom { margin-top: 80px; }
+  .case-02 .case-footer-signature { font-size: 28px; line-height: 36px; letter-spacing: -1px; }
+  .case-02 .case-footer-contact a:last-child { font-size: 13px; }
+}
+
+@media (max-width: 700px) {
+  .case-02 .case-number { font-size: 48px; line-height: 58px; }
+  .case-02 .case-hero h1 { max-width: 560px; margin-top: 56px; }
+  .case-02 .case-meta { margin-top: 48px; font-size: 12px; line-height: 18px; }
+  .case-02 .case-challenge { display: block; padding-block: 80px; }
+  .case02-opportunity { display: flex; flex-direction: column; gap: 40px; padding-bottom: 80px; }
+  .case02-opportunity-image { height: auto; min-height: 0; aspect-ratio: 788 / 654; border-radius: 12px; }
+  .case02-opportunity-copy, .case02-opportunity-reverse .case02-opportunity-copy { padding: 0 var(--gutter); gap: 40px; }
+  .case02-opportunity .case-aside { max-width: 300px; }
+  .case02-opportunity-description { font-size: 23px; line-height: 30px; }
+  .case02-opportunity-reverse .case02-opportunity-image { order: -1; }
+  .case02-experience { display: block; padding-block: 80px; }
+  .case02-experience .case-aside { max-width: 280px; margin-bottom: 36px; }
+  .case02-principles { padding-block: 64px 80px; }
+  .case02-principles-title, .case02-comparison-title { font-size: 40px; line-height: 46px; }
+  .case02-principles-grid { display: block; margin-top: 48px; }
+  .case02-principles-grid > .case-aside { max-width: 280px; margin-bottom: 36px; }
+  .case02-principles-detail { margin-top: 36px; font-size: 23px; line-height: 30px; }
+  .case02-principles-detail p + p { margin-top: 30px; }
+  .case02-ai-card { flex-direction: column; align-items: flex-start; gap: 20px; margin-top: 40px; padding: 24px; }
+  .case02-ai-card > img { flex-basis: auto; width: 140px; height: 140px; align-self: center; }
+  .case02-ai-card h3 { max-width: 180px; font-size: 20px; line-height: 25px; }
+  .case02-ai-card p { font-size: 16px; line-height: 21px; }
+  .case02-comparison { margin-left: 12px; padding: 36px 0 32px 24px; border-radius: 32px 0 0 32px; }
+  .case02-comparison-title { margin-bottom: 32px; }
+  .case02-comparison-screens { gap: 24px; padding-right: 24px; scroll-snap-type: x mandatory; }
+  .case02-comparison-screens figure { flex-basis: min(76vw, 360px); scroll-snap-align: start; }
+  .case02-comparison-screens figcaption { margin-bottom: 20px; font-size: 16px; line-height: 22px; }
+  .case-02 .case-footer { padding-block: 64px 48px; }
+  .case-02 .case-footer h2 { font-size: 40px; line-height: 44px; }
+  .case-02 .case-footer-bottom { margin-top: 72px; }
+  .case-02 .case-footer-signature { font-size: 26px; line-height: 34px; }
+}

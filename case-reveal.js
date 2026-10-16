@@ -15,6 +15,10 @@
       ['.case-stats > div'],
       ['.case-badges > img'],
       ['.case-gallery-controls', '.case-screen-viewport'],
+      ['.case02-experience > .case-aside', '.case02-experience .case-large-copy > p'],
+      ['.case02-opportunity-image', '.case02-opportunity .case-aside', '.case02-opportunity-description'],
+      ['.case02-principles-title', '.case02-principles .case-aside', '.case02-principles-lead', '.case02-principles-detail > p', '.case02-ai-card'],
+      ['.case02-comparison-title', '.case02-comparison figure'],
       ['.case-footer-edition', '.case-footer h2'],
       ['.case-footer-signature', '.case-footer-contact > a'],
     ];

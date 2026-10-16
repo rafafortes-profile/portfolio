@@ -173,6 +173,6 @@ async function playIntro() {
 }
 
 const initialRoute = location.hash.slice(1);
-if (!['home', 'sobre-mim', 'trabalhos', 'trabalho-01'].includes(initialRoute) || initialRoute === document.getElementById('app')?.dataset.page) {
+if (!['home', 'sobre-mim', 'trabalhos', 'trabalho-01', 'trabalho-02'].includes(initialRoute) || initialRoute === document.getElementById('app')?.dataset.page) {
   window.portfolioIntro.play();
 }

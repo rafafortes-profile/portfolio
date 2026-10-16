@@ -16,7 +16,7 @@
         } catch {
           firstHomeVisit = !document.referrer;
         }
-        if (firstHomeVisit && !['#sobre-mim', '#trabalhos', '#trabalho-01'].includes(location.hash)) document.documentElement.classList.add('intro-menu-pending');
+        if (firstHomeVisit && !['#sobre-mim', '#trabalhos', '#trabalho-01', '#trabalho-02'].includes(location.hash)) document.documentElement.classList.add('intro-menu-pending');
         setTimeout(() => document.documentElement.classList.remove('intro-pending', 'intro-menu-pending'), 2500);
       }
     </script>
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./sobre-mim.css">
     <link rel="stylesheet" href="./trabalhos.css">
     <link rel="stylesheet" href="./trabalho-01.css">
+    <link rel="stylesheet" href="./trabalho-02.css">
     <script src="./intro.js" defer></script>
     <script src="./pages.js" defer></script>
     <script src="./case-gallery.js" defer></script>
