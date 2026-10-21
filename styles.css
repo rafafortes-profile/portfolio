@@ -19,7 +19,13 @@
   --ink: #323232;
   --muted: #9a9a9a;
   --link: #3366ff;
-  --gutter: 4.4444444444vw;
+  --gutter: calc(4.4444444444 * var(--layout-unit));
+  --layout-unit: 1vw;
+}
+
+/* Keep text, images and spacing at the same scale above 1440px. */
+@media (min-width: 1440px) {
+  :root { --layout-unit: 14.4px; }
 }
 
 * { box-sizing: border-box; }
@@ -36,6 +42,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Center the original desktop composition on larger monitors. */
+#app { max-width: 1440px; margin-inline: auto; }
+
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 p, h1 { margin: 0; }
@@ -48,9 +57,9 @@ a:focus-visible {
 /* The original Figma frame is 1440 × 1024. Desktop proportions follow it. */
 .home {
   display: grid;
-  grid-template-rows: 21.0416666667vw 25.5555555556vw minmax(10.5555555556vw, 1fr) 7.4366666667vw;
-  min-height: max(100svh, calc(71.1111111111vw - 1px));
-  padding-bottom: calc(6.5216666667vw - 1px);
+  grid-template-rows: calc(21.0416666667 * var(--layout-unit)) calc(25.5555555556 * var(--layout-unit)) minmax(calc(10.5555555556 * var(--layout-unit)), 1fr) calc(7.4366666667 * var(--layout-unit));
+  min-height: max(100svh, calc(71.1111111111 * var(--layout-unit) - 1px));
+  padding-bottom: calc(6.5216666667 * var(--layout-unit) - 1px);
   overflow: hidden;
 }
 
@@ -60,14 +69,14 @@ a:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 4.8611111111vw var(--gutter) 0;
-  font-size: 1.411vw;
+  padding: calc(4.8611111111 * var(--layout-unit)) var(--gutter) 0;
+  font-size: calc(1.411 * var(--layout-unit));
   line-height: normal;
 }
 
 .navigation {
   display: flex;
-  gap: 2.9166666667vw;
+  gap: calc(2.9166666667 * var(--layout-unit));
   align-items: flex-start;
 }
 
@@ -93,10 +102,10 @@ a:focus-visible {
 .navigation-item:not(.current)::after {
   content: "";
   position: absolute;
-  top: 2.5694444444vw;
+  top: calc(2.5694444444 * var(--layout-unit));
   left: 0;
-  width: 2.8472222222vw;
-  height: 0.1388888889vw;
+  width: calc(2.8472222222 * var(--layout-unit));
+  height: calc(0.1388888889 * var(--layout-unit));
   background: currentColor;
   transform: scaleX(0);
   transform-origin: right center;
@@ -114,15 +123,15 @@ a:focus-visible {
 
 .active-underline {
   position: absolute;
-  top: 2.5694444444vw;
+  top: calc(2.5694444444 * var(--layout-unit));
   left: 0;
   display: block;
-  width: 2.8472222222vw;
-  height: 0.1388888889vw;
+  width: calc(2.8472222222 * var(--layout-unit));
+  height: calc(0.1388888889 * var(--layout-unit));
 }
 
 .date {
-  margin-top: -0.6944444444vw;
+  margin-top: calc(-0.6944444444 * var(--layout-unit));
   white-space: nowrap;
 }
 
@@ -132,12 +141,12 @@ a:focus-visible {
   position: relative;
   font-optical-sizing: none;
   font-variation-settings: "opsz" 72, "GRAD" 0, "ROND" 0, "wdth" 100;
-  margin-left: -1.5277777778vw;
+  margin-left: calc(-1.5277777778 * var(--layout-unit));
   color: #000;
-  font-size: 23.8551388889vw;
+  font-size: calc(23.8551388889 * var(--layout-unit));
   font-weight: 600;
   line-height: 0.9075830975;
-  letter-spacing: -1.3376319444vw;
+  letter-spacing: calc(-1.3376319444 * var(--layout-unit));
   white-space: nowrap;
 }
 
@@ -195,7 +204,7 @@ a:focus-visible {
 
 .expertise {
   margin-left: var(--gutter);
-  font-size: 1.5253472222vw;
+  font-size: calc(1.5253472222 * var(--layout-unit));
   line-height: normal;
 }
 
@@ -207,10 +216,10 @@ a:focus-visible {
 }
 
 .name {
-  font-size: 2.3526388889vw;
+  font-size: calc(2.3526388889 * var(--layout-unit));
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.1071736111vw;
+  letter-spacing: calc(-0.1071736111 * var(--layout-unit));
 }
 
 .contact {
@@ -218,18 +227,18 @@ a:focus-visible {
   flex-direction: column;
   align-items: flex-start;
   align-self: start;
-  font-size: 1.1205555556vw;
+  font-size: calc(1.1205555556 * var(--layout-unit));
   font-style: normal;
   line-height: 1.2394645513;
 }
 
-.email { margin-top: 1.6022406684vw; }
+.email { margin-top: calc(1.6022406684 * var(--layout-unit)); }
 
 .linkedin {
-  margin-top: 1.8760681152vw;
+  margin-top: calc(1.8760681152 * var(--layout-unit));
   color: var(--link);
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9930555556vw;
+  font-size: calc(0.9930555556 * var(--layout-unit));
   font-weight: 600;
   line-height: 1.1888111888;
   text-decoration: underline;
@@ -252,7 +261,7 @@ a:focus-visible {
   .active-underline { top: 27px; width: 29px; height: 2px; }
   .navigation-item:not(.current)::after { top: 27px; width: 29px; height: 2px; }
   .date { margin-top: 0; font-size: 12px; }
-  .home h1 { margin-left: -1.5277777778vw; }
+  .home h1 { margin-left: calc(-1.5277777778 * var(--layout-unit)); }
 
   .expertise {
     max-width: 330px;

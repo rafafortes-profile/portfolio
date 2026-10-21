@@ -22,6 +22,7 @@ async function playIntro() {
   }
   const isMultiline = title.dataset.intro === 'lines';
   const isCollection = title.dataset.intro === 'cards';
+  const isBlock = title.dataset.intro === 'block';
   const animateMenu = document.getElementById('app')?.dataset.page === 'home' && root.classList.contains('intro-menu-pending');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const originalText = title.textContent;
@@ -79,7 +80,7 @@ async function playIntro() {
     if (stopped || reducedMotion.matches) return;
 
     const ease = 'cubic-bezier(0.22, 1, 0.36, 1)';
-    if (!isCollection) {
+    if (!isCollection && !isBlock) {
       const text = title.firstChild;
       const range = document.createRange();
       const pieces = [];
@@ -139,7 +140,7 @@ async function playIntro() {
       });
     }
 
-    const elements = isMultiline || isCollection ? [
+    const elements = isMultiline || isCollection || isBlock ? [
       ...Array.from(document.querySelectorAll('[data-intro-reveal]'), element => [element, Number(element.dataset.introReveal)]),
     ] : [
       ['.expertise', 1500],
@@ -152,10 +153,11 @@ async function playIntro() {
     elements.forEach(([target, delay]) => {
       const element = typeof target === 'string' ? document.querySelector(target) : target;
       if (!element) return;
+      const isBlockTitle = isBlock && element === title;
       animations.push(element.animate([
-        { opacity: 0, transform: 'translate3d(0, -10px, 0)' },
+        { opacity: 0, transform: `translate3d(0, ${isBlockTitle ? '-24px' : '-10px'}, 0)` },
         { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-      ], { duration: 650, delay, easing: ease, fill: 'both' }));
+      ], { duration: isBlockTitle ? 900 : 650, delay, easing: ease, fill: 'both' }));
     });
 
     reveal();

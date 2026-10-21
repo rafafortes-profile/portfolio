@@ -1,23 +1,23 @@
 /* Desktop values follow the original 1440 × 1024 Figma frame. */
 .about-page {
-  min-height: max(100svh, calc(71.1111111111vw - 1px));
-  padding-bottom: calc(8.75vw - 1px);
+  min-height: max(100svh, calc(71.1111111111 * var(--layout-unit) - 1px));
+  padding-bottom: calc(8.75 * var(--layout-unit) - 1px);
 }
 
-.about-page .header { min-height: 7.5vw; }
+.about-page .header { min-height: calc(7.5 * var(--layout-unit)); }
 .about-page .navigation-item { color: var(--ink); }
-.about-page .active-underline { width: 4.7222222222vw; }
+.about-page .active-underline { width: calc(4.7222222222 * var(--layout-unit)); }
 
 .about-content {
   display: grid;
-  grid-template-columns: 48.6111111111vw 28.2638888889vw;
-  column-gap: 14.2361111111vw;
-  margin: 10.1388888889vw 3.75vw 0 var(--gutter);
+  grid-template-columns: calc(48.6111111111 * var(--layout-unit)) calc(28.2638888889 * var(--layout-unit));
+  column-gap: calc(14.2361111111 * var(--layout-unit));
+  margin: calc(10.1388888889 * var(--layout-unit)) calc(3.75 * var(--layout-unit)) 0 var(--gutter);
 }
 
 .profile {
   display: grid;
-  grid-template-rows: 26.8055555556vw auto;
+  grid-template-rows: calc(26.8055555556 * var(--layout-unit)) auto;
   align-content: start;
   min-width: 0;
 }
@@ -25,26 +25,26 @@
 .about-statement {
   position: relative;
   align-self: start;
-  width: 40.9027777778vw;
+  width: calc(40.9027777778 * var(--layout-unit));
   color: #161616;
-  font-size: 2.4875vw;
+  font-size: calc(2.4875 * var(--layout-unit));
   font-weight: 700;
-  line-height: 3.0208333333vw;
+  line-height: calc(3.0208333333 * var(--layout-unit));
 }
 
 .profile-details {
   display: grid;
-  grid-template-columns: 14.5270138889vw 29.5833333333vw;
-  column-gap: 4.5007638889vw;
+  grid-template-columns: calc(14.5270138889 * var(--layout-unit)) calc(29.5833333333 * var(--layout-unit));
+  column-gap: calc(4.5007638889 * var(--layout-unit));
   align-items: start;
 }
 
 .portrait {
   position: relative;
-  width: 14.5270138889vw;
-  height: 17.9166666667vw;
+  width: calc(14.5270138889 * var(--layout-unit));
+  height: calc(17.9166666667 * var(--layout-unit));
   overflow: hidden;
-  border-radius: 1.2105555556vw;
+  border-radius: calc(1.2105555556 * var(--layout-unit));
 }
 
 .portrait img {
@@ -59,88 +59,88 @@
 .section-label {
   margin: 0;
   color: #a8a8a8;
-  font-size: 0.6671527778vw;
+  font-size: calc(0.6671527778 * var(--layout-unit));
   font-weight: 700;
-  line-height: 0.8333333333vw;
-  letter-spacing: 0.0833888889vw;
+  line-height: calc(0.8333333333 * var(--layout-unit));
+  letter-spacing: calc(0.0833888889 * var(--layout-unit));
   text-transform: uppercase;
 }
 
-.latest-experience .section-label { margin-left: 0.0694444444vw; }
+.latest-experience .section-label { margin-left: calc(0.0694444444 * var(--layout-unit)); }
 
 .latest-experience h2 {
-  width: 23.359375vw;
-  margin: 1.5534722222vw 0 0;
+  width: calc(23.359375 * var(--layout-unit));
+  margin: calc(1.5534722222 * var(--layout-unit)) 0 0;
   color: #000;
-  font-size: 1.5348611111vw;
+  font-size: calc(1.5348611111 * var(--layout-unit));
   font-weight: 600;
-  line-height: 1.9184027778vw;
+  line-height: calc(1.9184027778 * var(--layout-unit));
 }
 
 .experience-period {
   color: #7e7e7e;
-  font-size: 0.6671527778vw;
+  font-size: calc(0.6671527778 * var(--layout-unit));
   font-style: italic;
   font-weight: 200;
-  line-height: 0.8895138889vw;
+  line-height: calc(0.8895138889 * var(--layout-unit));
   white-space: nowrap;
 }
 
 .latest-period {
-  margin-top: 1.5840277778vw;
-  line-height: 0.8485416667vw;
+  margin-top: calc(1.5840277778 * var(--layout-unit));
+  line-height: calc(0.8485416667 * var(--layout-unit));
 }
 
 .latest-description {
-  margin-top: 3.7736111111vw;
+  margin-top: calc(3.7736111111 * var(--layout-unit));
   color: #000;
-  font-size: 1.0159027778vw;
-  line-height: 1.3707638889vw;
-  letter-spacing: 0.0248333333vw;
+  font-size: calc(1.0159027778 * var(--layout-unit));
+  line-height: calc(1.3707638889 * var(--layout-unit));
+  letter-spacing: calc(0.0248333333 * var(--layout-unit));
 }
 
-.career-history { padding-top: 1.4583333333vw; }
-.career-history > .section-label { margin-left: 8.4722222222vw; }
+.career-history { padding-top: calc(1.4583333333 * var(--layout-unit)); }
+.career-history > .section-label { margin-left: calc(8.4722222222 * var(--layout-unit)); }
 
 .career-list {
-  margin: 1.3902777778vw 0 0;
+  margin: calc(1.3902777778 * var(--layout-unit)) 0 0;
   padding: 0;
   list-style: none;
 }
 
 .career-item {
   display: grid;
-  grid-template-columns: 8.4722222222vw 19.7916666667vw;
+  grid-template-columns: calc(8.4722222222 * var(--layout-unit)) calc(19.7916666667 * var(--layout-unit));
   align-items: start;
-  min-height: 11.11875vw;
+  min-height: calc(11.11875 * var(--layout-unit));
 }
 
-.career-item:nth-child(2) { min-height: 12.5645833333vw; }
-.career-item:nth-child(3) { min-height: 11.4527777778vw; }
+.career-item:nth-child(2) { min-height: calc(12.5645833333 * var(--layout-unit)); }
+.career-item:nth-child(3) { min-height: calc(11.4527777778 * var(--layout-unit)); }
 .career-item:last-child { min-height: 0; }
-.career-item > .experience-period { padding-top: 0.484375vw; }
+.career-item > .experience-period { padding-top: calc(0.484375 * var(--layout-unit)); }
 
 .career-details h3 {
   display: flex;
   align-items: center;
-  min-height: 1.7790277778vw;
+  min-height: calc(1.7790277778 * var(--layout-unit));
   margin: 0;
   color: #000;
-  font-size: 0.9117361111vw;
+  font-size: calc(0.9117361111 * var(--layout-unit));
   font-weight: 600;
   line-height: normal;
 }
 
 .career-details > p {
-  margin-top: 0.4445138889vw;
+  margin-top: calc(0.4445138889 * var(--layout-unit));
   color: #7e7e7e;
   font-size: 10px;
-  line-height: 1.2230555556vw;
-  letter-spacing: 0.0203819444vw;
+  line-height: calc(1.2230555556 * var(--layout-unit));
+  letter-spacing: calc(0.0203819444 * var(--layout-unit));
 }
 
 .career-details strong { color: #000; font-weight: 600; }
-.career-item:last-child .career-details > p { max-width: 18.235vw; }
+.career-item:last-child .career-details > p { max-width: calc(18.235 * var(--layout-unit)); }
 
 @media (max-width: 1050px) {
   .about-page { padding-bottom: 64px; }
