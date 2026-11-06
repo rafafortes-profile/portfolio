@@ -45,6 +45,7 @@
     // Touch uses native momentum scrolling and scroll snap, preserving vertical page scrolling.
     viewport.addEventListener('pointerdown', event => {
       if (event.pointerType === 'touch' || event.button !== 0) return;
+      if (event.target.closest('button, a, input, select, textarea, video')) return;
       pointer = { id: event.pointerId, x: event.clientX, start: viewport.scrollLeft, index: active };
       viewport.setPointerCapture(event.pointerId);
       viewport.classList.add('is-dragging');

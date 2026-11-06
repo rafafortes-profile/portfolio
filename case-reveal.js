@@ -9,6 +9,17 @@
     if (!content || reducedMotion.matches || !window.IntersectionObserver || !Element.prototype.animate) return;
 
     const groups = [
+      ['.case01-context .case-aside', '.case01-lead', '.case01-context-detail'],
+      ['.case01-goals .case01-section-title', '.case01-goal-card'],
+      ['.case01-goals-note'],
+      ['.case01-visibility .case-aside', '.case01-visibility .case01-copy > p'],
+      ['.case01-comparison figure'],
+      ['.case01-craft .case01-section-title', '.case01-craft .case01-copy > p'],
+      ['.case01-component-grid > figure > *'],
+      ['.case01-story .case01-copy > p'],
+      ['.case01-motion-copy > *'],
+      ['.case01-motion-figure'],
+      ['.case01-delivery .case-aside', '.case01-delivery .case01-copy > p'],
       ['.case-challenge .case-aside', '.case-challenge .case-large-copy'],
       ['.case-experience-image', '.case-experience-copy .case-aside', '.case-experience-description'],
       ['.case-mechanics .case-aside', '.case-mechanics .case-large-copy > p'],
