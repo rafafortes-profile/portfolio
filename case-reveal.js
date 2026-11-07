@@ -20,7 +20,7 @@
       ['.case01-motion-copy > *'],
       ['.case01-motion-figure'],
       ['.case01-delivery .case-aside', '.case01-delivery .case01-copy > p'],
-      ['.case-challenge .case-aside', '.case-challenge .case-large-copy'],
+      ['.case-challenge .case-aside', '.case-challenge .case-large-copy > p'],
       ['.case-experience-image', '.case-experience-copy .case-aside', '.case-experience-description'],
       ['.case-mechanics .case-aside', '.case-mechanics .case-large-copy > p'],
       ['.case-stats > div'],
@@ -30,6 +30,9 @@
       ['.case02-opportunity-image', '.case02-opportunity .case-aside', '.case02-opportunity-description'],
       ['.case02-principles-title', '.case02-principles .case-aside', '.case02-principles-lead', '.case02-principles-detail > p', '.case02-ai-card'],
       ['.case02-comparison-title', '.case02-comparison figure'],
+      ['.case02-hierarchy .case02-eyebrow', '.case02-hierarchy h2', '.case02-hierarchy .case02-copy > p'],
+      ['.case02-hierarchy-card'],
+      ['.case02-delivery .case-aside', '.case02-delivery .case02-copy > p'],
       ['.case-footer-edition', '.case-footer h2'],
       ['.case-footer-signature', '.case-footer-contact > a'],
     ];
